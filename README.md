@@ -1,2 +1,2 @@
-#The decisions for this design
+# The decisions for this design
 My goal for this project is to achieve minimalism. To enhance readability, I've used a color scheme that harmonizes with the white background, resulting in a clean and distraction-free interface. The focus is on organizing Pokémon thumbnails and names in a grid layout. When you click on a Pokémon, a new page will be displayed, presenting additional details such as abilities and types, offering you a comprehensive experience.
