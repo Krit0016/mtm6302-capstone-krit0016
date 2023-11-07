@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar bg-body-tertiary">
+                <a class="navbar-brand" href="index.html"><img src="images/Pokemon logo.png" alt="logo" height="80"></a>
+        
+                <div class="search-container">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="search-button" type="submit">
+                            <i class="bi bi-search"></i> <!-- Use the Bootstrap search icon -->
+                        </button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+
+        <div class="dropdown">
+            <button class="btn dropdown-toggle larger-dropdown-button" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="images/pokeball-close.png" alt="pokeball" height="40" class="dropdown-image">   
+                <span class="dropdown-text">My Pokemon</span>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Caught</a></li>
+              <li><a class="dropdown-item" href="#">Uncaught</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="pokemon-list">
+        <div class="container">
+            <div class="row row-cols-2 row-cols-md-4">
+            <!-- Card 1 -->
+                 <div class="col mb-4">
+                    <div class="card">
+                        <div class="full-card">
+                            <div class="g-card">
+                                <a class="001" href="bulbasaur.html"><img src="images/bulbasaur.png" class="img-fluid card-img" alt="Bulbasaur"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">#001</h5>
+                                <p class="card-text">Bulbasaur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            <!-- Card 2 -->
+                <div class="col mb-4">
+                    <div class="card">
+                        <div class="full-card">
+                            <div class="g-card">
+                                <a class="002" href="#"><img src="images/ivysaur.png" class="img-fluid card-img" alt="Ivysaur"></a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">#002</h5>
+                                <p class="card-text">Ivysaur</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Card 3 -->
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="full-card">
+                        <div class="g-card">
+                            <a class="003" href="#"><img src="images/venusaur.png" class="img-fluid card-img" alt="Venusaur"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">#003</h5>
+                            <p class="card-text">Venusaur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="full-card">
+                        <div class="r-card">
+                            <a class="004" href="#"><img src="images/charmander.png" class="img-fluid card-img" alt="Charmande"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">#004</h5>
+                            <p class="card-text">Charmande</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="full-card">
+                        <div class="r-card">
+                            <a class="005" href="#"><img src="images/charmeleon.png" class="img-fluid card-img" alt="Charmeleon"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">#005</h5>
+                            <p class="card-text">Charmeleon</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="full-card">
+                        <div class="r-card">
+                            <a class="006" href="#"><img src="images/charrizard.png" class="img-fluid card-img" alt="Charizard"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">#006</h5>
+                            <p class="card-text">Charizard</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="full-card">
+                        <div class="b-card">
+                            <a class="007" href="#"><img src="images/squirrel.png" class="img-fluid card-img" alt="Squirtle"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">#007</h5>
+                            <p class="card-text">Squirtle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="col mb-4">
+                <div class="card">
+                    <div class="full-card">
+                        <div class="b-card">
+                            <a class="008" href="#"><img src="images/wartortle.png" class="img-fluid card-img" alt="Wartortle"></a>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">#008</h5>
+                            <p class="card-text">Wartortle</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button id="loadMoreBtn" class="btn btn-primary">Load More</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="col-md-6 text-start">
+            <p>My Pokemon Mock-up Website</p>
+            <p>&copy; 2023 Orranis</p>
+        </div>
+    </footer>
+
+    
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
