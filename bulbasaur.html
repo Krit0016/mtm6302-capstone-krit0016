@@ -10,16 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bulbasaur.css">
 
 </head>
 <body>
     <header>
         <div class="container-fluid">
-            <nav class="navbar bg-body-tertiary">
-                <a class="navbar-brand" href="index.html"><img src="images/Pokemon logo.png" alt="logo" height="80"></a>
-        
-                <div class="search-container">
+            <nav class="navbar">
+                <div class="logo-style m-2">
+                    <a class="navbar-brand text-start" href="index.html">
+                        <img src="images/Pokemon-logo.png" class="img-fluid" alt="logo">
+                    </a>
+                </div>
+
+                <div class="search-container m-2">
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="search-button" type="submit">
@@ -33,150 +37,189 @@
 
     <main>
         <div class="container">
-            <h1>#001</h1>
+            <div class="code-number">
+                <h1>#001</h1>
+            </div>
             
-            <div class="row">
-                <div class="col-md-6">
-                    <h2>Bulbasaur</h2>
-                    <img src="images/grass.png" class="img-fluid" alt="Grass">
-                    <span class="type">Grass & Poison</span>
+            <div class="pokemon-details">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="pokemon-name">
+                            <h2>Bulbasaur</h2>
+                        </div>
+
+                        <div class="pokemon-type">
+                            <img src="images/grass.png" class="img-fluid" alt="Grass">
+                            <span class="type">Grass & Poison</span>
+                        </div>
                     
+                        <div class="pokemon-character">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <td class="fw-bold">Height</td>
+                                        <td>2'04"</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Weight</td>
+                                        <td>15.2 lbs</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="fw-bold">Ability</td>
+                                        <td>Overgrow</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
 
-                    <ul class="list-group">
-                        <li class="list-group-item"><strong>Height:</strong> 2'04"</li>
-                        <li class="list-group-item"><strong>Weight:</strong> 15.2 lbs</li>
-                        <li class="list-group-item"><strong>Ability:</strong> Overgrow</li>
-                    </ul>
-
-                </div>
-                <div class="col-md-6">
-                    <img src="images/bulbasaur.png" class="img-fluid" alt="Bulbasaur">
+                    <div class="col-md-6">
+                        <div class="rounded-circle background-circle"></div>
+                        <div class="pokemon-img">
+                            <img src="images/bulbasaur.png" class="img-fluid" alt="Bulbasaur">
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Base Stats heading -->
-            <div class="row">
-                <div class="col-md-4">
-                    <h3 class="mb-3">Base Stats</h3>
-                </div>
+            <div class="pokemon-stat">
+                <!-- Base Stats heading -->
+                <div class="row">
+                    <div class="col-md-2 d-flex align-items-center">
+                        <div class="base-stat-title">
+                            <h3 class="mb-3">Base Stats</h3>
+                        </div>
+                    </div>
         
-            <!-- Base Stats List -->
-            <div class="col-md-8">      
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <span>Hp</span>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="stat-bar">
-                                <div class="progress" style="width: 100%;">
-                                    <div class="progress-bar bg-success" style="width: 45%;">
+                    <!-- Base Stats List -->
+                    <div class="col-md-10 justify-content-center">      
+                        <ul class="list-group">
+                            <!-- HP -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h4>Hp</h4>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="stat-bar">
+                                            <div class="progress" style="width: 100%;">
+                                                <div class="progress-bar bg-success" style="width: 45%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
                                         <span class="stat-level">45</span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                            </li>
 
-                <!-- Attrack -->
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <span>Attack</span>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="stat-bar">
-                                <div class="progress" style="width: 100%;">
-                                    <div class="progress-bar bg-success" style="width: 49%;">
+                            <!-- Attrack -->
+                            <li class="list-group-item">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <h4>Attack</h4>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="stat-bar">
+                                            <div class="progress" style="width: 100%;">
+                                                <div class="progress-bar bg-success" style="width: 49%;"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2">
                                         <span class="stat-level">49</span>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
+                            </li>
 
-                <!-- Defense -->
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <span>Defense</span>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="stat-bar">
-                                <div class="progress" style="width: 100%;">
-                                    <div class="progress-bar bg-success" style="width: 49%;">
-                                        <span class="stat-level">49</span>
+                            <!-- Defense -->
+                            <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h4>Defense</h4>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="stat-bar">
+                                        <div class="progress" style="width: 100%;">
+                                            <div class="progress-bar bg-success" style="width: 49%;"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- Special Attack -->
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <span>Special Attack</span>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="stat-bar">
-                                <div class="progress" style="width: 100%;">
-                                    <div class="progress-bar bg-success" style="width: 65%;">
-                                        <span class="stat-level">65</span>
-                                    </div>
+                                <div class="col-md-2">
+                                    <span class="stat-level">49</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
+                            </li>
 
-                <!-- Special Defense -->
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <span>Special Defense</span>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="stat-bar">
-                                <div class="progress" style="width: 100%;">
-                                    <div class="progress-bar bg-success" style="width: 65%;">
-                                        <span class="stat-level">65</span>
+                            <!-- Special Attack -->
+                            <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h4>Special Attack</h4>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="stat-bar">
+                                        <div class="progress" style="width: 100%;">
+                                            <div class="progress-bar bg-success" style="width: 65%;"></div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-
-                <!-- Speed -->
-                <li class="list-group-item">
-                    <div class="row">
-                        <div class="col-md-2">
-                            <span>Speed</span>
-                        </div>
-                        <div class="col-md-10">
-                            <div class="stat-bar">
-                                <div class="progress" style="width: 100%;">
-                                    <div class="progress-bar bg-success" style="width: 45%;">
-                                        <span class="stat-level">45</span>
-                                    </div>
+                                <div class="col-md-2">
+                                    <span class="stat-level">65</span>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>    
+                            </li>
+
+                            <!-- Special Defense -->
+                            <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h4>Special Defense</h4>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="stat-bar">
+                                        <div class="progress" style="width: 100%;">
+                                            <div class="progress-bar bg-success" style="width: 65%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <span class="stat-level">65</span>
+                                </div>
+                            </div>
+                            </li>
+
+                            <!-- Speed -->
+                            <li class="list-group-item">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h4>Speed</h4>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="stat-bar">
+                                        <div class="progress" style="width: 100%;">
+                                            <div class="progress-bar bg-success" style="width: 45%;"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <span class="stat-level">45</span>
+                                </div>
+                            </div>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>   
     </main>
 
     <footer>
-        <div class="col-md-6 text-start">
-            <p>My Pokemon Mock-up Website</p>
-            <p>&copy; 2023 Orranis</p>
+        <div class="container">
+            <div class="text-end">
+                <p>My Pokemon Mock-up Website</p>
+                <p>&copy; 2023 Orranis</p>
+            </div>
         </div>
     </footer>
 

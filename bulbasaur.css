@@ -47,6 +47,139 @@ table {
     border-spacing: 0;
 }
 
+
+/* GENERAL STYLES STARTS HERE */
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background-color: #C4E3D4;
 }
+
+main {
+    font-size: 20px;
+}
+
+/* Adjust the size of the logo */
+.logo-style img {
+    max-width: 300px; /* Adjust the width as needed */
+    max-height: 300px; /* Adjust the height as needed */
+}
+
+/* ----- Search container ----- */
+.search-container {
+    position: relative;
+}
+
+/* ----- Search button ----- */
+.search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px; /* Adjust the padding to fine-tune the icon's position */
+}
+
+.search-button i {
+    font-size: 1.2rem; /* Adjust the size of the icon as needed */
+    color: black; /* Adjust the color of the icon */
+    padding: 10px;
+}
+
+.form-control {
+    padding-right: 40px; /* Adjust the padding to create space for the icon */
+    border: none;
+}
+
+/* ----- Code Number ----- */
+.code-number {
+    color: rgba(255, 255, 255, 0.535);
+    font-size: 6rem;
+    font-weight: bold;
+    padding-bottom: 90px;
+}
+
+/* ----- Pokemon Name ----- */
+.pokemon-name {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+/* ----- Pokemon Type ----- */
+.pokemon-type img {
+    max-width: 100px; /* Adjust the width as needed */
+    max-height: 100px; /* Adjust the height as needed */
+    margin-right: 20px;
+}
+
+.pokemon-type .type {
+    font-weight: bold;
+}
+
+.pokemon-type {
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    margin-bottom: 20px;
+}
+
+/* ----- Pokemon Image ----- */
+.pokemon-img {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Adjust the desired width */
+    height: 100%; /* Adjust the desired height to make it circular */
+    border-radius: 50%; /* Make it circular */
+    position: relative;
+}
+
+.pokemon-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-90%);
+    z-index: 1;
+    
+}
+
+.background-circle {
+    background-color: #D9EFE4;
+    width: 100%; /* Adjust the desired width */
+    padding-bottom: 100%; /* Creates a circular shape */
+    border-radius: 50%; /* Make it circular */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ----- Base stat ----- */
+.pokemon-stat {
+    margin-top: 50px;
+}
+
+.base-stat-title h3 {
+    font-weight: bold;
+}
+
+/* Remove background styling for list items */
+.list-group-item {
+    background: none; /* Remove background color */
+    border: none; /* Remove border */
+}
+
+/* ----- Footer ----- */
+/* Style the footer background color */
+footer {
+    background-color: white; /* Change to your desired background color */
+    color: black; /* Text color for the footer */
+    padding: 20px 0; /* Add space at the top and bottom of the footer */
+    margin-top: 290px;
+    line-height: 1.5;
+}
+
+
+
