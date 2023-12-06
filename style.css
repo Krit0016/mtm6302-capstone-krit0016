@@ -1,0 +1,237 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* GENERAL STYLES STARTS HERE */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+/* Adjust the size of the logo */
+.logo-style img {
+    max-width: 300px; /* Adjust the width as needed */
+    max-height: 300px; /* Adjust the height as needed */
+}
+
+/* ----- Search container ----- */
+.search-container {
+    position: relative;
+}
+
+/* ----- Search button ----- */
+.search-button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 10px; /* Adjust the padding to fine-tune the icon's position */
+}
+
+.search-button i {
+    font-size: 1.2rem; /* Adjust the size of the icon as needed */
+    color: #B7C36F; /* Adjust the color of the icon */
+    padding: 10px;
+}
+
+.form-control {
+    padding-right: 40px; /* Adjust the padding to create space for the icon */
+    border: 2px solid #B7C36F;
+}
+
+
+/* ----- Dropdown button ----- */
+.dropdown .btn-secondary {
+    background-color: #B7C36f; /* Change the background color */
+    color: #fff; /* Change the text color */
+    border: none;
+}
+
+/* Style the dropdown button when hovered */
+.dropdown .btn-secondary:hover {
+    background-color: #ffb703; /* Change the background color on hover */
+}
+
+/* Style the dropdown button when it's active (clicked) */
+.dropdown .btn-secondary:focus {
+    background-color: #B7C36F; /* Change the background color on focus */
+}
+
+/* Style the dropdown items (links) */
+.dropdown .dropdown-menu a {
+    color: #333; /* Change the text color of the items */
+}
+
+/* Style the dropdown items on hover */
+.dropdown .dropdown-menu a:hover {
+    background-color: #f8f9fa; /* Change the background color on hover */
+}
+
+/* ----- Cards ----- */
+.card {
+    height: 100%; /* Set a fixed height for all cards */
+    border: none;  /* Add a border to the cards */
+    border-radius: 50px; /* Set the border radius to 50px */
+    transition: transform 0.2s; /* Add a smooth hover effect */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Add a slight scale-up effect on hover */
+}
+
+/* Style the card image to fill the available space and maintain aspect ratio */
+.card-img {
+    object-fit: fill; /* Maintain aspect ratio */
+    height: 250px; /* Adjust the desired height */
+    width: 100%; /* Adjust the desired width */
+    margin-top: 10px;
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+
+/* Add padding between the image and card body */
+.card-body {
+    padding-top: 10px; /* Adjust the desired padding value */
+    text-align: center; /* Center the text within the card */
+    margin-bottom: 10px;
+}
+
+
+/* Style the card title and card text */
+.card .card-title,
+.card .card-text {
+    text-align: center;
+}
+
+.card-text {
+    font-size: 25px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* ----- Cards color ----- */
+.g-card {
+    background-color: #C4E3D4;
+    border-radius: 50px;
+}
+
+.r-card {
+    background-color: #EFD3BB;
+    border-radius: 50px;
+}
+
+.b-card {
+    background-color: #CDE6F8;
+    border-radius: 50px;
+}
+
+.card-title-g {
+    background-color: #D9EFE4; /* Add your desired background color */
+    border-radius: 10px; /* Add your desired border radius */
+    padding: 5px; /* Add some padding for spacing */
+    margin-bottom: 1em;
+    display: inline-block; /* Make the background color and border radius wrap the text */
+}
+
+.card-title-r {
+    background-color: #F4E9E1; /* Add your desired background color */
+    border-radius: 10px; /* Add your desired border radius */
+    padding: 5px; /* Add some padding for spacing */
+    margin-bottom: 1em;
+    display: inline-block; /* Make the background color and border radius wrap the text */
+}
+
+.card-title-b {
+    background-color: #E9F2F8; /* Add your desired background color */
+    border-radius: 10px; /* Add your desired border radius */
+    padding: 5px; /* Add some padding for spacing */
+    margin-bottom: 1em;
+    display: inline-block; /* Make the background color and border radius wrap the text */
+}
+
+/* ----- Load more button ----- */
+.btn-load {
+    background-color: #B7C36F; /* Change the background color */
+    color: #fff; /* Change the text color */
+    border: none;
+    border-radius: 5px; /* Add rounded corners */
+    padding: 10px 20px; /* Adjust the padding to your liking */
+    font-size: 16px; /* Adjust the font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
+
+/* Hover effect */
+.btn-load:hover {
+    background-color: #ffb703; /* Change the background color on hover */
+    border-color: #ffb703;
+    }
+
+/* ----- Footer ----- */
+/* Style the footer background color */
+footer {
+    background-color: #a8dadc; /* Change to your desired background color */
+    color: #fff; /* Text color for the footer */
+    padding: 20px 0; /* Add space at the top and bottom of the footer */
+    margin-top: 40px;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+
