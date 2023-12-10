@@ -283,11 +283,11 @@ async function getPokemon(index) {
                         </div>
                     </div>`;
 
-    // Set the modal content inside the #list element
-    $list.innerHTML = modalContent;
+    // Append the modal content to the body
+    document.body.insertAdjacentHTML('beforeend', modalContent);
 
-    // Display the modal
-    document.getElementById('cardModal').style.display = 'block';
+    // Get the modal element
+    const modal = document.getElementById('cardModal');
 
     // Clear catch status and hide buttons
     document.getElementById('catchStatus').innerText = '';
@@ -302,16 +302,19 @@ async function getPokemon(index) {
         markPokemonAsCaught(index, pokemon);
         toggleButtonsVisibility(index);
     });
-    
+
     document.getElementById('markCaughtBtn').addEventListener('click', function () {
         // No need to repeat the action, as marking caught is the same
         toggleButtonsVisibility(index);
     });
-    
+
     document.getElementById('releasePokemonBtn').addEventListener('click', function () {
         releasePokemon(index, pokemon);
         toggleButtonsVisibility(index);
     });
+
+    // Show the modal
+    modal.style.display = 'block';
 }
 
 function isPokemonCaught(index) {
@@ -391,7 +394,8 @@ function closeModal(modalId) {
     const modal = document.getElementById(modalId);
     if (modal) {
         modal.style.display = 'none';
-        getPokemons(); // Reload the Pokémon list after closing the modal
+        // Remove the modal from the body after closing
+        modal.parentNode.removeChild(modal);
     } else {
         console.error(`Modal with ID ${modalId} not found`);
     }
@@ -413,4 +417,3 @@ function parseUrl(url) {
 window.addEventListener('load', function () {
     getPokemons();
 });
-
