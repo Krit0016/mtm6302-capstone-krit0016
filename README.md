@@ -40,6 +40,7 @@ The project is organized into several components:
 - **Catching and Releasing Logic:** Implementing the logic for catching and releasing Pokémon, as well as updating the UI dynamically based on the Pokémon's status, posed challenges that required careful handling of events and state.
 -  **Displaying Caught Pokémon:** Implementing the feature to display the list of caught Pokémon when clicking on the dropdown menu and then selecting "Caught" required additional logic and event handling.
 
+
 ## Resources Used
 
 - [Bootstrap Documentation](https://getbootstrap.com/docs/5.0/getting-started/introduction/): Referenced for styling and layout.
