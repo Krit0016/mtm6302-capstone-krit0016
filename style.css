@@ -129,10 +129,10 @@ body {
 }
 
 /* Style the card image to fill the available space and maintain aspect ratio */
-.card-img {
-    object-fit: fill; /* Maintain aspect ratio */
-    height: 250px; /* Adjust the desired height */
-    width: 100%; /* Adjust the desired width */
+.card-img .image {
+    object-fit: fill; /* Maintain aspect ratio and fill the entire container */
+    height: 200px; /* Adjust the desired height */
+    width: 100%; /* Take up the full width of the container */
     margin-top: 10px;
     display: flex;
     align-items: center; /* Center vertically */
@@ -159,22 +159,12 @@ body {
 }
 
 /* ----- Cards color ----- */
-.g-card {
+.card-color {
     background-color: #C4E3D4;
     border-radius: 50px;
 }
 
-.r-card {
-    background-color: #EFD3BB;
-    border-radius: 50px;
-}
-
-.b-card {
-    background-color: #CDE6F8;
-    border-radius: 50px;
-}
-
-.card-title-g {
+.card-title {
     background-color: #D9EFE4; /* Add your desired background color */
     border-radius: 10px; /* Add your desired border radius */
     padding: 5px; /* Add some padding for spacing */
@@ -182,21 +172,6 @@ body {
     display: inline-block; /* Make the background color and border radius wrap the text */
 }
 
-.card-title-r {
-    background-color: #F4E9E1; /* Add your desired background color */
-    border-radius: 10px; /* Add your desired border radius */
-    padding: 5px; /* Add some padding for spacing */
-    margin-bottom: 1em;
-    display: inline-block; /* Make the background color and border radius wrap the text */
-}
-
-.card-title-b {
-    background-color: #E9F2F8; /* Add your desired background color */
-    border-radius: 10px; /* Add your desired border radius */
-    padding: 5px; /* Add some padding for spacing */
-    margin-bottom: 1em;
-    display: inline-block; /* Make the background color and border radius wrap the text */
-}
 
 /* ----- Load more button ----- */
 .btn-load {
@@ -226,11 +201,96 @@ footer {
     line-height: 1.5;
 }
 
+/* ----- STYLE THE MODAL ----- */
+
+/* ----- Code Number ----- */
+.code-number {
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+/* ----- Pokemon Name ----- */
+.pokemon-name {
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 25px;
+}
+
+/* Style the modal background */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+}
+
+/* Style the modal content */
+.modal-content {
+    background-color: #f2cfd9; 
+    border-radius: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    padding: 20px; 
+}
+
+/* Add image background to modal content */
+/* .modal-content {
+    background: url('images/grass-filed.jpeg') center center no-repeat;
+    background-size: cover; 
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+} */
 
 
+/* Make the circle responsive and center the image */
+.background-circle {
+    background-color: #D9EFE4;
+    width: 80%; /* Adjust the desired percentage width for responsiveness */
+    border-radius: 50%; /* Make it circular */
+    position: relative; /* Add relative positioning */
+    margin: 0 auto; /* Center the circle horizontally */
+    /* overflow: hidden; Hide content that overflows the circle */
+}
 
+.background-circle .pokemon-img {
+    max-width: 100%; /* Adjust the maximum width to make the image bigger */
+    max-height: 100%; /* Adjust the maximum height to make the image bigger */
+}
 
+.background-circle .image {
+    width: 100%; /* Ensure the image takes up the full width of the circle */
+    height: 100%; /* Ensure the image takes up the full height of the circle */
+}
 
+/* Style the close button */
+.close-button {
+    color: #fff; /* Set the color of the close button text */
+    background-color: #333; /* Set the background color of the close button */
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+/* Style the close button on hover */
+.close-button:hover {
+    background-color: #555; /* Change the background color on hover */
+}
+
+/* ----- Base stat ----- */
+.pokemon-stat {
+    margin-top: 50px;
+}
+
+.base-stat-title h3 {
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.button-caught {
+    padding: 20px;
+}
 
 
 
